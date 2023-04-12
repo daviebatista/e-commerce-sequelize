@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.createTable("addresses",{
+    await queryInterface.createTable("products",{
       id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -13,37 +13,41 @@ module.exports = {
           type: Sequelize.STRING,
           allowNull: false
         },
-        country: {
+        type: {
         type: Sequelize.STRING,
         allowNull: false,
         },
-        state: {
+        price: {
+          type: Sequelize.DECIMAL,
+          allowNull: false
+        },
+        brand: {
           type: Sequelize.STRING,
           allowNull: false
         },
-        city: {
+        dimensions: {
           type: Sequelize.STRING,
           allowNull: false
         },
-        postalCode: {
-          type: Sequelize.STRING,
+        rating: {
+          type: Sequelize.DECIMAL,
           allowNull: false
         },
-        neighborhood: {
-          type: Sequelize.STRING,
+        totalRatings: {
+          type: Sequelize.INTEGER,
           allowNull: false
         },
-        street: {
-          type: Sequelize.STRING,
+        imageUrl: {
+          type: Sequelize.TEXT,
           allowNull: false
         },
-        number: {
-          type: Sequelize.STRING,
+        inStock: {
+          type: Sequelize.INTEGER,
           allowNull: false
         },
-        complement: {
-          type:Sequelize.STRING,
-          allowNull: true
+        description: {
+          type: Sequelize.TEXT,
+          allowNull: false
         },
         createdAt: {
         type: Sequelize.DATE
@@ -55,7 +59,12 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable("addresses");
+    /**
+     * Add reverting commands here.
+     *
+     * Example:
+     * await queryInterface.dropTable('users');
+     */
+    await queryInterface.dropTable("products");
   }
 };
-
