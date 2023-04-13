@@ -24,7 +24,7 @@ module.exports = {
         const client = await Client.findByPk(clientId,{
             include: {association: "addresses"}
         })
-        return response.json(client)
+        return response.json(client.addresses)
     },
     async put(requisition, response) {
         const {name, country, state, city, postalCode, neighborhood, street, number, complement} = requisition.body
