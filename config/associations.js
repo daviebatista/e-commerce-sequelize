@@ -23,7 +23,7 @@ Product.belongsToMany(Comment, {
 })
 
 Comment.belongsToMany(Product, {
-    foreignKey: "clientId",
+    foreignKey: "commentId",
     through: "product_comments",
     as: "products"
 })

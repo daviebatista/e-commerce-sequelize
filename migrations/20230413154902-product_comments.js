@@ -9,10 +9,10 @@ module.exports = {
         allowNull: false,
         primaryKey: true,
         },
-        clientId: {
+        commentId: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: "clients", key: "id"},
+        references: { model: "comments", key: "id"},
         onUpdate: "CASCADE",
         onDelete: "CASCADE"
         },
