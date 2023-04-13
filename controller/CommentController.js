@@ -10,7 +10,7 @@ module.exports = {
 
         const product = await Product.findByPk(productId)
         const client = await Client.findByPk(clientId)
-        if(!product && !client){
+        if(!product || !client){
             response.send(`Product or author were not found!`)
         }
         const [comments] = await Comment.findOrCreate({
