@@ -5,12 +5,11 @@ const Comment = require('../models/Comment')
 module.exports = {
     async store(requisition, response) {
         const {productId} = requisition.params
-        const {clientId} = requisition.params
         const {rating, text} = requisition.body
 
         const product = await Product.findByPk(productId)
-        const client = await Client.findByPk(clientId)
-        if(!product || !client){
+        // const client = await Client.findByPk(clientId)
+        if(!product /* || !client*/){
             response.send(`Product or author were not found!`)
         }
         const [comments] = await Comment.findOrCreate({
