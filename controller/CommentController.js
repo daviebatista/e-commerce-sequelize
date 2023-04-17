@@ -5,7 +5,7 @@ const Comment = require('../models/Comment')
 module.exports = {
     async store(requisition, response) {
         const {productId} = requisition.params
-        const {rating, text} = requisition.body
+        const {authorId, rating, text} = requisition.body
 
         const product = await Product.findByPk(productId)
         // const client = await Client.findByPk(clientId)
@@ -13,7 +13,7 @@ module.exports = {
             response.send(`Product or author were not found!`)
         }
         const [comments] = await Comment.findOrCreate({
-            where: {rating, text}
+            where: {authorId, rating, text}
         })
 
         await product.addComment(comments)
@@ -29,9 +29,9 @@ module.exports = {
         return response.json(product.comments)
     },
     async put(requisition, response) {
-        const {rating, text} = requisition.body
+        const {authorId, rating, text} = requisition.body
         await Comment.update(
-            {rating, text},
+            {authorId, rating, text},
             {
                 where:  {
                     id: requisition.params.id

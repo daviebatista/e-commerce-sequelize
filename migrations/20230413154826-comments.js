@@ -9,6 +9,13 @@ module.exports = {
         allowNull: false,
         primaryKey: true,
         },
+        authorId:{
+          type: Sequelize.INTEGER,
+          allowNull: false,
+          references: { model: "clients", key: "id"},
+          onUpdate: "CASCADE",
+          onDelete: "CASCADE"
+        },
         rating: {
         type: Sequelize.DECIMAL,
         allowNull: false,
