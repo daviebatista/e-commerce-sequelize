@@ -28,13 +28,15 @@ Comment.belongsToMany(Product, {
     as: "products"
 })
 //-----
-Comment.hasOne(Client,  {
+Comment.belongsToMany(Client,  {
+    through: "product_comments",
     onDelete: "CASCADE",
     onUpdate: "CASCADE",
 })
-Client.belongsTo(Comment, {
+Client.belongsToMany(Comment, {
     foreignKey: "authorId",
-    as: "author"
+    through: "product_comments",
+    as: "client"
 })
 
 
