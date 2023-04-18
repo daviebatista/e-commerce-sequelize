@@ -6,9 +6,10 @@ module.exports = {
     async store(requisition, response) {
         const {productId} = requisition.params
         const {authorId, rating, text} = requisition.body
+        const author = await Client.findByPk(authorId)
 
         const product = await Product.findByPk(productId)
-        if(!product){
+        if(!product || !author){
             return response.send(`Product or author were not found!`)
         }
         const [comments] = await Comment.findOrCreate({

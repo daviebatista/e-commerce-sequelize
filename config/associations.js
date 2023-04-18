@@ -28,16 +28,7 @@ Comment.belongsToMany(Product, {
     as: "products"
 })
 //-----
-Comment.belongsToMany(Client,  {
-    through: "product_comments",
-    onDelete: "CASCADE",
-    onUpdate: "CASCADE",
-})
-Client.belongsToMany(Comment, {
-    foreignKey: "authorId",
-    through: "product_comments",
-    as: "client"
-})
+
 
 
 module.exports = {Client, Address, Product, Comment}
