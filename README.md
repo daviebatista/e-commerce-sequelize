@@ -27,11 +27,13 @@ Configuração do sistema
 
 Faça a clonagem do repositório via SSH ou download direto. Depois disso, use o seguinte comando no terminal do VSC: 
 <br/>
-
+<br/>
 
 ```
 npm init
 ```
+<br/>
+<br/>
 <br/>
 Feito isso, vá até a pasta 'config', e abra o arquivo 'config.js'. Nele, haverá o objeto JS contendo os campos e atributos a serem preenchidos. Coloque-os de acordo com as descrições ao lado de cada um destes, segundo suas configurações locais do banco de dados.
 <br/>
