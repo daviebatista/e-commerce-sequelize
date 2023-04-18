@@ -33,4 +33,9 @@ npm init
 <br/>
 Feito isso, vá até a pasta 'config', e abra o arquivo 'config.js'. Nele, haverá o objeto JS contendo os campos e atributos a serem preenchidos. Coloque-os de acordo com as descrições ao lado de cada um destes, segundo suas configurações locais do banco de dados.
 <br/>
-Com o sistema configurado, e com os módulos instalados, podemos agora partir para a criação do banco de dados na máquina local. Ainda no terminal, rode o comando
+Com o sistema configurado, e com os módulos instalados, podemos agora partir para a criação do banco de dados na máquina local. Para isso, use o comando:
+
+```
+sequelize db:migrate
+```
+Assim, estaremos com o banco armazenado em nosso sistema local, e poderemos fazer uso dele para subirmos ele na rede e fazermos o uso desse.
