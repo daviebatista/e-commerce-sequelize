@@ -10,6 +10,9 @@ Bem-vindo!
 
 Este é um projeto realizado individualmente, sendo um banco de dados voltado para a estruturação back-end de um e-commerce via estruturação SQL.
 Nele, foi preparada uma estrutura de tabelas em associações conjuntas, para se formular um sistema capaz de registrar, armazenar, alterar e controlar as informações existentes em um sistema similar ao banco de dados dos sites de lojas digitais.
+Segue, abaixo, o esquema prático do database, para entendimento prévio:
+
+<img align="center" src="https://user-images.githubusercontent.com/91736880/232808581-732ae6ce-8478-4e33-9a5a-3b0f04592024.png">
 
 <h2 align="center">
 O que você vai precisar para fazer uso do sistema:
