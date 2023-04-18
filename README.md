@@ -22,8 +22,9 @@ O que você vai precisar para fazer uso do sistema:
 
 <h2 align="center">
 Configuração do sistema
-![image](https://user-images.githubusercontent.com/91736880/232801943-8a4fb98a-efad-4bdc-8147-a42cebc38479.png)
 </h2>
+![image](https://user-images.githubusercontent.com/91736880/232802662-ad3eeba4-d7de-47e3-b054-278a5a9ab463.png)
+
 Faça a clonagem do repositório via SSH ou download direto. Depois disso, use o comando 'npm init' no terminal do VSC.
 Feito isso, vá até a pasta 'config', e abra o arquivo 'config.js'. Nele, haverá o objeto JS contendo os campos e atributos a serem preenchidos. Coloque-os de acordo com as descrições ao lado de cada um destes, segundo suas configurações locais do banco de dados.
 
