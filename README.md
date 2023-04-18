@@ -27,6 +27,8 @@ Configuração do sistema
 
 Faça a clonagem do repositório via SSH ou download direto. Depois disso, use o seguinte comando no terminal do VSC: 
 <br/>
+
+
 ```
 npm init
 ```
