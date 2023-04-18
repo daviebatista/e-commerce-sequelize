@@ -9,7 +9,8 @@ Bem-vindo!
 </h1>
 
 Este é um projeto realizado individualmente, sendo um banco de dados voltado para a estruturação back-end de um e-commerce via estruturação SQL.
+Nele, foi preparada uma estrutura de tabelas em associações conjuntas, para se formular um sistema capaz de registrar, armazenar, alterar e controlar as informações existentes em um sistema similar ao banco de dados dos sites de lojas digitais.
 
-<p align="center">
-*O que você vai precisar:
-</p>
+<h2 align="center">
+O que você vai precisar:
+</h2>
