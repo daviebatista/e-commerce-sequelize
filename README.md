@@ -4,9 +4,9 @@
   </a>
 </p>
 
-<p align="center">
-#Bem-vindo!
-</p>
+<h1 align="center">
+Bem-vindo!
+</h1>
 
 Este é um projeto realizado individualmente, sendo um banco de dados voltado para a estruturação back-end de um e-commerce via estruturação SQL.
 
