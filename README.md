@@ -19,3 +19,11 @@ O que você vai precisar para fazer uso do sistema:
 - Um sistema de banco de dados local. Recomendo, por ter sido o nativo, o uso do PostgreSQL, por ter a portabilidade padrão deste projeto;
 - Opcionalmente, um DBMS compatível com seu banco de dados local, caso deseja realizar visualização estruturada. Recomendo o PgAdmin;
 - Um software para realizar requisições HTTP. Recomendo o Postman.
+
+<h2 align="center">
+Configuração do sistema
+![image](https://user-images.githubusercontent.com/91736880/232801943-8a4fb98a-efad-4bdc-8147-a42cebc38479.png)
+</h2>
+Faça a clonagem do repositório via SSH ou download direto. Depois disso, use o comando 'npm init' no terminal do VSC.
+Feito isso, vá até a pasta 'config', e abra o arquivo 'config.js'. Nele, haverá o objeto JS contendo os campos e atributos a serem preenchidos. Coloque-os de acordo com as descrições ao lado de cada um destes, segundo suas configurações locais do banco de dados.
+
