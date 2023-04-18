@@ -1,6 +1,6 @@
 <p align="center">
   <a>
-    <img align="center" src="https://readme-typing-svg.herokuapp.com/?lines=e-commerce+sequelize+1.0.1;made+by+daviebatista&center=true&size=32">
+    <img align="center" src="https://readme-typing-svg.herokuapp.com/?lines=e-commerce+sequelize+V1-0;made+by+daviebatista&center=true&size=32">
   </a>
 </p>
 
