@@ -1,6 +1,6 @@
 {
   "name": "banco-de-dados---e-commerce",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "Current state: Addresses, Clients, Products, and Comments available, routes not properly documented in text file, still to be done",
   "main": "__dirname",
   "scripts": {
