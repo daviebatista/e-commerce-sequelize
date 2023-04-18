@@ -25,6 +25,12 @@ Configuração do sistema
 </h2>
     <img align="center" src="https://user-images.githubusercontent.com/91736880/232802662-ad3eeba4-d7de-47e3-b054-278a5a9ab463.png">
 
-Faça a clonagem do repositório via SSH ou download direto. Depois disso, use o comando 'npm init' no terminal do VSC.
+Faça a clonagem do repositório via SSH ou download direto. Depois disso, use o seguinte comando no terminal do VSC: 
+<br/>
+```
+npm init
+```
+<br/>
 Feito isso, vá até a pasta 'config', e abra o arquivo 'config.js'. Nele, haverá o objeto JS contendo os campos e atributos a serem preenchidos. Coloque-os de acordo com as descrições ao lado de cada um destes, segundo suas configurações locais do banco de dados.
-
+<br/>
+Com o sistema configurado, e com os módulos instalados, podemos agora partir para a criação do banco de dados na máquina local. Ainda no terminal, rode o comando
