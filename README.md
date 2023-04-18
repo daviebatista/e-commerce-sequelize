@@ -5,11 +5,11 @@
 </p>
 
 <p align="center">
-# Bem-vindo!
+#Bem-vindo!
 </p>
 
 Este é um projeto realizado individualmente, sendo um banco de dados voltado para a estruturação back-end de um e-commerce via estruturação SQL.
 
 <p align="center">
-* O que você vai precisar:
+*O que você vai precisar:
 </p>
