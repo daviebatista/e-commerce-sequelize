@@ -77,14 +77,19 @@ Com a mensagem de sucesso aparecendo, podemos então começar a usar nossas rota
 Clients
 </h4>
 
+<h6 align="center">
+  GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
+</h6>
 ```
-GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
 ROTA: http://localhost:3000/client
 Não há corpo nesta rota, apenas link.
 ```
 
-```
+<h6 align="center">
 POST - INSERIR UM NOVO CLIENTE NO BANCO DE DADOS
+</h6>
+
+```
 ROTA: http://localhost:3000/client
 
 CORPO:
@@ -99,19 +104,26 @@ CORPO:
 }
 ```
 
-```
+<h6 align="center">
 PUT - ALTERAR OS DADOS DE UM CLIENTE SALVO
+</h6>
+
+```
 ROTA: http://localhost:3000/clients/id
 No id, insira a Primary Key do cliente que deseja submeter alterações.
-Aqui, há a liberdade de se escolher qual informação alterar, baseado no corpo da requisição POST. É possível escolher tanto uma, quanto todas a serem alteradas.
+Aqui, há a liberdade de se escolher qual informação alterar, baseado no corpo da requisição POST.
+É possível escolher tanto uma, quanto todas a serem alteradas.
 CORPO:
 {
     "name": "otherName",
 }
 ```
 
-```
+<h6 align="center">
 DELETE - REMOVER UM CLIENTE DO BANCO DE DADOS
+</h6>
+
+```
 ROTA: http://localhost:3000/clients/id
 No id, insira a Primary Key do cliente que deseja remover.
 ```
