@@ -50,8 +50,16 @@ Assim, estaremos com o banco armazenado em nosso sistema local, e poderemos faze
 Inserção de informações e rotas
 </h2>
 
+<h4 align="center">
+Hierarquia de dados
+</h4>
 Agora que temos o sistema configurado e pronto para fucnionar, podemos realizar a criação das informações no banco. Para isso, devemos respeitar a hierarquia do banco, uma vez que nos é necessário, para registrarmos alguns dados, haver outros que dão a dependência dos demais.
 <br/>
 A hierarquia, deste modo, é representada por este esquema:
 <br/>
     <img align="center" src="https://user-images.githubusercontent.com/91736880/233106114-3a21b616-cb02-4c0c-821e-e0c9fd9f45d3.png">
+Assim, é preciso haver um registro de cliente para se registrar um endereço, e um registro de cliente e produto para poder se registrar um comentário, que ficarão igualmente identificadas e armazenados nas estruturas intermédias 'client_addresses' e 'product_comments'.
+
+<h4 align="center">
+Rotas
+</h4>
