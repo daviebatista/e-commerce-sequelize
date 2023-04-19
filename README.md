@@ -81,7 +81,7 @@ Clients
 
 ```
 ROTA: http://localhost:3000/client
-Não há corpo nesta rota, apenas link.
+-> Não há corpo nesta rota, apenas link.
 ```
 
 <h6 align="center">
@@ -109,12 +109,12 @@ PUT - ALTERAR OS DADOS DE UM CLIENTE SALVO
 
 ```
 ROTA: http://localhost:3000/clients/id
-No id, insira a Primary Key do cliente que deseja submeter alterações.
+-> No id, insira a Primary Key do cliente que deseja submeter alterações.
 Aqui, há a liberdade de se escolher qual informação alterar, baseado no corpo da requisição POST.
 É possível escolher tanto uma, quanto todas a serem alteradas.
 CORPO:
 {
-    "name": "otherName",
+    "name": "otherName"
 }
 ```
 
@@ -124,7 +124,7 @@ DELETE - REMOVER UM CLIENTE DO BANCO DE DADOS
 
 ```
 ROTA: http://localhost:3000/clients/id
-No id, insira a Primary Key do cliente que deseja remover.
+-> No id, insira a Primary Key do cliente que deseja remover.
 ```
 
 
@@ -174,7 +174,7 @@ ROTA: http://localhost:3000/clients/clientId/addresses/id
 Segue-se o padrão das requisições PUT, podendo escolher qual(is) dado(s) a ser(em) alterado(s).
 CORPO:
 {
-    "name": "Mother's house",
+    "name": "Mother's house"
 }
 ```
 
@@ -188,3 +188,62 @@ ROTA: http://localhost:3000/clients/clientId/addresses/id
 -> No id, insira a Primary Key do endereço que será removido;
 ```
 
+
+<h4 align="center">
+Products
+</h4>
+
+<h6 align="center">
+  GET - VERIFICAR TODOS OS PRODUTOS REGISTRADOS
+</h6>
+
+```
+ROTA: http://localhost:3000/product
+-> Não há corpo nesta rota, apenas link.
+```
+
+<h6 align="center">
+POST - INSERIR UM NOVO PRODUTO NO BANCO DE DADOS
+</h6>
+
+```
+ROTA: http://localhost:3000/product
+
+-> Aqui, segue-se o mesmo exemplo de preenchimento POST, porém com essas propriedades, aqui já preenchidas para exemplificar:
+CORPO:
+{
+    "name": "Monitor Gamer LED, Tela de 24 Tempo de resposta 5ms,Taxa de atualização de 75Hz, Preto, T350, Samsung - CX 1 UN",
+    "type": "Monitors",
+    "price": 921.11,
+    "brand": "Samsung",
+    "dimensions": "Produto com base (L x A x P): 539.2 x 425.3 x 232.0 mm",
+    "rating": 4,
+    "totalRatings": 10,
+    "imageUrl": "https://img.kalunga.com.br/fotosdeprodutos/477266d.jpg",
+    "inStock": 5,
+    "description": "Agora, a imagem é reproduzida sem falhas. A taxa de atualização de 75Hz oferece cenas mais fluidas. Seu momento de diversão não tem lag ou efeito fantasma, quer você esteja assistindo a um vídeo ou jogando um jogo."
+}
+```
+
+<h6 align="center">
+PUT - ALTERAR OS DADOS DE UM PRODUTO
+</h6>
+
+```
+ROTA: http://localhost:3000/products/id
+-> No id, insira a Primary Key do produto em que se deseja submeter alterações.
+Segue-se o padrão das requisições anteriores.
+CORPO:
+{
+    "rating": 3.5
+}
+```
+
+<h6 align="center">
+DELETE - REMOVER UM PRODUTO
+</h6>
+
+```
+ROTA: ROTA: http://localhost:3000/products/id
+-> No id, insira a Primary Key do produto que deseja remover.
+```
