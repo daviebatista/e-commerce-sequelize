@@ -73,11 +73,24 @@ Com a mensagem de sucesso aparecendo, podemos então começar a usar nossas rota
 <h4 align="center">
 Clients
 </h4>
-
-
 ```
 GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
 ROTA: http://localhost:3000/client
 Não há corpo nesta rota, apenas link.
 ```
 
+```
+POST - INSERIR UM NOVO CLIENTE NO BANCO DE DADOS
+ROTA: http://localhost:3000/client
+
+CORPO:
+{
+    "name": "clientName",
+    "age": 18,
+    "gender": "clientGender",
+    "cpf": "12345678910",
+    "email": "clientName@email.com",
+    "phoneNumber": "(12) 34567-8910",
+    "password": "password_example"
+}
+```
