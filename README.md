@@ -318,4 +318,5 @@ ROTA: http://localhost:3000/products/productId/comments/id
 Com isso, temos o sistema totalmente funcional, com suas rotas e parâmetros definidos. Sinta-se livre para usar este sistema ou alterá-lo como desejar. Se possível, realize um pull request com as implementações para que eu possa verificá-las!
 </p>
 
-  <img src="https://user-images.githubusercontent.com/91736880/228610548-96679501-92a2-4b6b-8bf5-91d27ffc7628.png"  align="center">
+<img align="center" src="https://user-images.githubusercontent.com/91736880/228610548-96679501-92a2-4b6b-8bf5-91d27ffc7628.png">
+
