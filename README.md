@@ -77,7 +77,8 @@ Clients
 GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
 ROTA: http://localhost:3000/client
 * Não há corpo nesta rota, apenas link.
-
+```
+```
 POST - INSERIR UM NOVO CLIENTE NO BANCO DE DADOS
 ROTA: http://localhost:3000/client
 
