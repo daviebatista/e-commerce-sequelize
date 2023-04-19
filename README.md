@@ -80,6 +80,7 @@ Clients
 <h6 align="center">
   GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
 </h6>
+
 ```
 ROTA: http://localhost:3000/client
 Não há corpo nesta rota, apenas link.
