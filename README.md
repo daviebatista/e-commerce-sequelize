@@ -73,12 +73,13 @@ Com a mensagem de sucesso aparecendo, podemos então começar a usar nossas rota
 <h4 align="center">
 Clients
 </h4>
+<br/>
 ```
 GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
 ROTA: http://localhost:3000/client
 Não há corpo nesta rota, apenas link.
 ```
-
+<br/>
 ```
 POST - INSERIR UM NOVO CLIENTE NO BANCO DE DADOS
 ROTA: http://localhost:3000/client
