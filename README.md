@@ -112,6 +112,7 @@ ROTA: http://localhost:3000/clients/id
 -> No id, insira a Primary Key do cliente que deseja submeter alterações.
 Aqui, há a liberdade de se escolher qual informação alterar, baseado no corpo da requisição POST.
 É possível escolher tanto uma, quanto todas a serem alteradas.
+
 CORPO:
 {
     "name": "otherName"
@@ -172,6 +173,7 @@ ROTA: http://localhost:3000/clients/clientId/addresses/id
 -> No clientId, insira a Primary Key do cliente que deseja submeter alterações;
 -> No id, insira a Primary Key do endereço que será alterado;
 Segue-se o padrão das requisições PUT, podendo escolher qual(is) dado(s) a ser(em) alterado(s).
+
 CORPO:
 {
     "name": "Mother's house"
@@ -209,7 +211,8 @@ POST - INSERIR UM NOVO PRODUTO NO BANCO DE DADOS
 ```
 ROTA: http://localhost:3000/product
 
--> Aqui, segue-se o mesmo exemplo de preenchimento POST, porém com essas propriedades, aqui já preenchidas para exemplificar:
+-> Aqui, segue-se o mesmo exemplo de preenchimento POST, porém com essas propriedades, aqui já preenchidas para exemplificar.
+
 CORPO:
 {
     "name": "Monitor Gamer LED, Tela de 24 Tempo de resposta 5ms,Taxa de atualização de 75Hz, Preto, T350, Samsung - CX 1 UN",
@@ -233,6 +236,7 @@ PUT - ALTERAR OS DADOS DE UM PRODUTO
 ROTA: http://localhost:3000/products/id
 -> No id, insira a Primary Key do produto em que se deseja submeter alterações.
 Segue-se o padrão das requisições anteriores.
+
 CORPO:
 {
     "rating": 3.5
@@ -247,3 +251,71 @@ DELETE - REMOVER UM PRODUTO
 ROTA: ROTA: http://localhost:3000/products/id
 -> No id, insira a Primary Key do produto que deseja remover.
 ```
+
+
+<h4 align="center">
+Comments
+</h4>
+
+<h6 align="center">
+  GET - VERIFICAR TODOS OS COMENTÁRIOS REGISTRADOS EM UM PRODUTO
+</h6>
+
+```
+ROTA: http://localhost:3000/products/id/comments
+-> No id, insere-se a Primary Key do produto a se verificar os comentários;
+-> Não há corpo nesta rota, apenas link.
+```
+
+<h6 align="center">
+POST - INSERIR UM NOVO COMENTÁRIO PARA UM PRODUTO
+</h6>
+
+```
+ROTA: http://localhost:3000/products/id/comments
+-> No id, insere-se a Primary Key do produto a se registrar um comentário;
+-> Aqui, segue-se o mesmo exemplo de preenchimento POST, porém com a particularidade do 'authorId';
+
+CORPO:
+{   
+    "authorId": 2,
+    "rating": 5,
+    "text": "Recomendo muito!"
+}
+
+-> Em 'authorId', se insere a Primary Key do cliente que será o autor do comentário. Caso não exista, o sistema irá lançar uma mensagem de informações não encontradas.
+```
+
+<h6 align="center">
+PUT - ALTERAR OS DADOS DE UM COMENTÁRIO
+</h6>
+
+```
+ROTA: http://localhost:3000/products/productId/comments/id
+-> No productId, se insere a Primary Key do produto em que o comentário está hospedado;
+-> No id, insire-se a Primary Key do comentário a ser alterado;
+Segue-se o padrão das requisições PUT.
+
+CORPO:
+{
+    "rating": 3
+}
+
+-> Caso productId ou id não existam, haverá uma mensagem relatando que estes não foram encontrados, e em decorrência disso, o comentário não será inserido.
+```
+
+<h6 align="center">
+DELETE - REMOVER UM COMENTÁRIO
+</h6>
+
+```
+ROTA: http://localhost:3000/products/productId/comments/id
+
+-> No productId, se insere a Primary Key do produto em que o comentário está hospedado;
+-> No id, insire-se a Primary Key do comentário a ser alterado.
+```
+<p align="center">
+Com isso, temos o sistema totalmente funcional, com suas rotas e parâmetros definidos. Sinta-se livre para usar este sistema ou alterá-lo como desejar. Se possível, realize um pull request com as implementações para que eu possa verificá-las!
+</p>
+
+  <img src="https://komarev.com/ghpvc/?username=daviebatista"  align="center">
