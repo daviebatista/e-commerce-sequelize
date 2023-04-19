@@ -46,3 +46,12 @@ sequelize db:migrate
 
 Assim, estaremos com o banco armazenado em nosso sistema local, e poderemos fazer uso dele para subirmos ele na rede e fazermos o uso desse.
 
+<h2 align="center">
+Inserção de informações e rotas
+</h2>
+
+Agora que temos o sistema configurado e pronto para fucnionar, podemos realizar a criação das informações no banco. Para isso, devemos respeitar a hierarquia do banco, uma vez que nos é necessário, para registrarmos alguns dados, haver outros que dão a dependência dos demais.
+<br/>
+A hierarquia, deste modo, é representada por este esquema:
+<br/>
+    <img align="center" src="https://user-images.githubusercontent.com/91736880/233106114-3a21b616-cb02-4c0c-821e-e0c9fd9f45d3.png">
