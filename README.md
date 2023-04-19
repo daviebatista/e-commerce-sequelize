@@ -63,3 +63,32 @@ Assim, é preciso haver um registro de cliente para se registrar um endereço, e
 <h4 align="center">
 Rotas
 </h4>
+Aqui, faremos o uso das 4 principais rotas HTTP, para que possamos fazer a verificação, inserção, alteração e remoção de dados, no modelo CRUD.
+Cada metadado possui sua rota específica, e seu corpo em JSON a ser utilizado para que seja assim bem realizada. Abaixo, estarão ordenadas cada uma das rotas e seus devidos modelos. Antes de iniciar, devemos executar o launch do servidor. Para isso, usemos o terminal e digitemos o seguinte comando:
+```
+npx nodemon src
+```
+Com a mensagem de sucesso aparecendo, podemos então começar a usar nossas rotas para fazermos o CRUD no banco de dados!
+
+<h4 align="center">
+Clients
+</h4>
+```
+GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
+ROTA: http://localhost:3000/client
+* Não há corpo nesta rota, apenas link.
+
+POST - INSERIR UM NOVO CLIENTE NO BANCO DE DADOS
+ROTA: http://localhost:3000/client
+
+CORPO:
+{
+    "name": "clientName",
+    "age": 18,
+    "gender": "clientGender",
+    "cpf": "12345678910",
+    "email": "clientName@email.com",
+    "phoneNumber": "(12) 34567-8910",
+    "password": "password_example"
+}
+```
