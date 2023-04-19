@@ -73,6 +73,8 @@ Com a mensagem de sucesso aparecendo, podemos então começar a usar nossas rota
 <h4 align="center">
 Clients
 </h4>
+
+
 ```
 GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
 ROTA: http://localhost:3000/client
