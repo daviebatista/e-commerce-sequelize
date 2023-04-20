@@ -73,9 +73,9 @@ npx nodemon src
 Com a mensagem de sucesso aparecendo, podemos então começar a usar nossas rotas para fazermos o CRUD no banco de dados! Para boa realização, realize a inserção das informações ou tipos de rotas pelo Postman, tal qual mostrado na imagem abaixo:
     <img align="center" src="https://user-images.githubusercontent.com/91736880/233112878-b6e3eca7-bec2-4f16-b71d-401ad2852853.png">
 
-<h4 align="center">
+<h2 align="center">
 Clients
-</h4>
+</h2>
 
 <h6 align="center">
   GET - VERIFICAR TODOS OS CLIENTES REGISTRADOS
@@ -131,9 +131,9 @@ ROTA: http://localhost:3000/clients/id
 ```
 
 
-<h4 align="center">
+<h2 align="center">
 Addresses
-</h4>
+</h2>
 
 <h6 align="center">
   GET - VERIFICAR OS ENDEREÇOS SALVOS DE UM CLIENTE
@@ -193,9 +193,9 @@ ROTA: http://localhost:3000/clients/clientId/addresses/id
 ```
 
 
-<h4 align="center">
+<h2 align="center">
 Products
-</h4>
+</h2>
 
 <h6 align="center">
   GET - VERIFICAR TODOS OS PRODUTOS REGISTRADOS
@@ -255,9 +255,9 @@ ROTA: ROTA: http://localhost:3000/products/id
 ```
 
 
-<h4 align="center">
+<h2 align="center">
 Comments
-</h4>
+</h2>
 
 <h6 align="center">
   GET - VERIFICAR TODOS OS COMENTÁRIOS REGISTRADOS EM UM PRODUTO
