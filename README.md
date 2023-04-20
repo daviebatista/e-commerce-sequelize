@@ -65,9 +65,11 @@ Rotas
 </h4>
 Aqui, faremos o uso das 4 principais rotas HTTP, para que possamos fazer a verificação, inserção, alteração e remoção de dados, no modelo CRUD.
 Cada metadado possui sua rota específica, e seu corpo em JSON a ser utilizado para que seja assim bem realizada. Abaixo, estarão ordenadas cada uma das rotas e seus devidos modelos. Antes de iniciar, devemos executar o launch do servidor. Para isso, usemos o terminal e digitemos o seguinte comando:
+
 ```
 npx nodemon src
 ```
+
 Com a mensagem de sucesso aparecendo, podemos então começar a usar nossas rotas para fazermos o CRUD no banco de dados! Para boa realização, realize a inserção das informações ou tipos de rotas pelo Postman, tal qual mostrado na imagem abaixo:
     <img align="center" src="https://user-images.githubusercontent.com/91736880/233112878-b6e3eca7-bec2-4f16-b71d-401ad2852853.png">
 
